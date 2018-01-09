@@ -1,14 +1,13 @@
 h1 	{
+	text-align:center;
 	color:black;
 	background-color:#C0C0C0;
 	border:2px solid black;
-	text-decoration:underline;
-	padding: 15px 15px 15px 5px;
 }
 
 h2	{
 	color:blue;
-	background-color:line;
+	background-color:lime;
 	border:1px solid yellow;
 	text-shadow:1px 1px magenta;
 }
