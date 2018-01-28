@@ -5,13 +5,18 @@ h1 	{
 	border:2px solid black;
 }
 
-h2	{
-	color:blue;
-	background-color:lime;
-	border:1px solid yellow;
-	text-shadow:1px 1px magenta;
+body	{
+	background-color:;
+	border-style: none;
 }
 
-body {
-	background: lightblue;
+nav,h5	{
+	text-align:center;
+}
+
+h3	{
+	font-style:bold;
+}
+p	{
+	font-size: 15px;
 }
