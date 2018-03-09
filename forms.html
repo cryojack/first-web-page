@@ -2,14 +2,16 @@
 <html lang="en">
 	<head>
 	<link rel="icon" href="assets/images/webicon.png"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta charset="utf-8">
 		<title>Details here! | Mridul Nayar</title>
 	</head>
-	<body style="background-color:#BCC6CC">
-	<header>
-	<h1 id="top" align="center">Your Details</h1>
-	<hr />
-	<nav align="center">
+	<div id="detail-header">
+	<h1 id="top">Your Details</h1>
+	</div>
+	<body>
+	<div id="nav-bar-top">
+	<nav>
 	<a href = "home.html"> Home </a> | 
 	<a href = "aboutme.html"> About Me </a> | 
 	<a href = "index.html"> Index </a> | 
@@ -22,12 +24,20 @@
 	<a href = "diary.html"> Diary </a> | 
 	<a href = "blog.html"> Blog-uh-Sphere </a> | 
 	<a href = "mailto:mridul.nayar@gmail.com">Contact Me</a><br />
-	</nav><hr />
-	</header>
+	</nav>
+	</div>
+	<div id="form-details">
 	<h3 align="left">Enter details</h3>
-	<form>
-	<i>Your Name</i> <input type="text" name="first-name" size="30" maxlength="30" />
-	<br /><br />
+	<form id="detail-form" method="POST">
+	<i>First Name</i><br />
+	<input name="first-name" type="text" size="30">
+	<br />
+	<i>Last Name</i><br />
+	<input name="last-name" type="text" size="30">
+	<br />
+	<i>Date of Birth</i>
+	<br />
+	<input name="input-date" type="date"><br />
 	<i>Please check the appropriate options</i><br/><br />
 	I am a <br />
 	<input name="gender" value="man" type="radio" />Man
@@ -49,7 +59,7 @@
 		<option value="pgrad">Post-graduate</option>
 		<option value="doct">Doctorate</option>
 		<option value="noqual">No Qualification</option>
-		<option value="oth">Other</option>
+		<option value="other">Other</option>
 	</select>
 	<br /><br />
 	<i>Please upload your resume here</i><br />
@@ -65,12 +75,15 @@
 	<input name="submit" type="submit" value="Submit" />
 	<input name="reset" type="reset" value="Reset" />
 	</form>
-	<br />
+	</div>
+	<div id="side-section">
+	<p>Information here!</p>
+	</div>
 	<hr />
-	<footer>
-	<h5 align="center">Website created by Mridul Nayar<br />
+	<div id=foot-link>
+	<h5>Website created by Mridul Nayar<br />
 	©Copyright 2018 by me. All rights <i>are</i> reserved.</h5>
-	<p align="center"><a href="#top" align="center">Back to top</a></p>
-	</footer>
+	<p><a href="#top" align="center">Back to top</a></p>
+	</div>
 	</body>
 </html>
