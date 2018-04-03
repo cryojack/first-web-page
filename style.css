@@ -20,13 +20,14 @@ body{
   text-align: center;
   font-size: 25px;
   width: 100%;
-  height: 12%;
+  height: 15%;
   top: 18%;
   right: 0;
   left: 0;
   bottom: auto;
 }
 #form-details{
+  outline-color: magenta;
   font-size: 22px;
   width: 70%;
   height: 60%;
@@ -38,12 +39,10 @@ body{
 #side-section{
   font-size: 22px;
   float: right;
-  outline-style: groove;
-  outline-color: magenta;
   width: 30%;
-  height: 60%;
+  height: auto;
   top: 0;
-  right: ;
+  right: auto;
   left: 0;
   bottom: auto;
 }

@@ -1,0 +1,50 @@
+body{
+	background-color: #FDEEF4;
+}
+#page-heading{
+	text-align: center;
+	background-color: #E6A9EC;
+	font-size: 22px;
+	outline: solid black;
+	margin-top: 0;
+	margin-right: 100px;
+	margin-left: 100px;
+}
+#page-heading:hover{
+	color: yellow;
+	background-color: #504A4B;
+}
+#page-navigation{
+	text-align: center;
+	background-color: rgba(12,34,56,0.22);
+	font-size: 20px;
+}
+.navlink{
+	font-style: bold;
+	padding: 9px;
+}
+.navlink:visited{
+	color: yellow;
+}
+a:hover{
+	color: yellow;
+	background-color: #504A4B;
+	border-style: solid;
+	padding: 1px;
+}
+#page-main{
+	font-size: 25px;
+	top: auto;
+}
+#page-side{
+	font-size: 25px;
+	background-color: #4B0082;
+}
+#page-footer{
+	text-align: center;
+	font-size: 17px;
+	outline: solid wheat;
+	background-color: white;
+	margin-left: 350px;
+	margin-right: 350px;
+}
