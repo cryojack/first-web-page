@@ -2,58 +2,61 @@
 <html lang="en">
 	<head>
 	<link rel="icon" href="assets/images/webicon.png"/>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style2.css"/>
+	<!--link rel="stylesheet" type="text/javascript" href="formscript.js"/-->
 	<meta charset="utf-8">
 		<title>Details here! | Mridul Nayar</title>
 	</head>
-	<div id="detail-header">
-	<h1 id="top">Your Details</h1>
-	</div>
 	<body>
-	<div id="nav-bar-top">
-	<nav>
-	<a href = "home.html"> Home </a> | 
-	<a href = "aboutme.html"> About Me </a> | 
-	<a href = "index.html"> Index </a> | 
-	<a href = "examples.html"> Silly Examples</a> | 
-	<a href = "examples2.html"> Silly Examples 2</a> | 
-	<a href = "links.html"> Links </a> | 
-	<a href = "images.html"> My Images </a> | 
-	<a href = "videos.html"> My Videos </a> | 
-	<a href = "musings.html"> Musings! </a> | 
-	<a href = "diary.html"> Diary </a> | 
-	<a href = "blog.html"> Blog-uh-Sphere </a> | 
-	<a href = "mailto:mridul.nayar@gmail.com">Contact Me</a><br />
-	</nav>
+	<div id="page-heading">
+	<h1>Your Details</h1>
 	</div>
-	<div id="form-details">
-	<h3 align="left">Enter details</h3>
+	<div id="page-navigation">
+	<a class = "navlink" href = "home.html"> Home </a>
+	<a class = "navlink" href = "aboutme.html"> About Me </a>
+	<a class = "navlink" href = "index.html"> Index </a>
+	<a class = "navlink" href = "examples.html"> Silly Examples</a>
+	<a class = "navlink" href = "examples2.html"> Silly Examples 2</a>
+	<a class = "navlink" href = "links.html"> Links </a>
+	<a class = "navlink" href = "images.html"> My Images </a>
+	<a class = "navlink" href = "videos.html"> My Videos </a>
+	<a class = "navlink" href = "musings.html"> Musings! </a>
+	<a class = "navlink" href = "diary.html"> Diary </a>
+	<a class = "navlink" href = "blog.html"> Blog-uh-Sphere </a>
+	<a class = "navlink" href = "mailto:mridul.nayar@gmail.com">Contact Me</a>
+	</div>
+	<div id="page-form-details">
+	<h3>Enter details</h3>
 	<form id="detail-form" method="POST">
-	<i>First Name</i><br />
-	<input name="first-name" type="text" size="30">
-	<br />
-	<i>Last Name</i><br />
-	<input name="last-name" type="text" size="30">
-	<br />
-	<i>Date of Birth</i>
-	<br />
-	<input name="input-date" type="date"><br />
-	<i>Please check the appropriate options</i><br/><br />
+	<div>
+		<label for="first-name">First Name</label>
+		<input type="text" id="first-name" name="user-name" size="30">
+	</div>
+	<div>
+		<label for="last-name">Last Name</label>
+		<input type="text" id="last-name" name="user-name" size="30">
+	</div>
+	<!--br />
+	Date of Birth
+	<input id="detail-date" type="date">
+	<br /><br />
+	<i>Please check the appropriate options</i><br /><br />
 	I am a <br />
-	<input name="gender" value="man" type="radio" />Man
-	<input name="gender" value="woman" type="radio" />Woman
-	<input name="gender" value="unspec" type="radio" />Unspecified
+	<input name="gender" id="choice-man" value="man" type="radio">Man
+	<input name="gender" id="choice-woman" value="woman" type="radio">Woman
+	<input name="gender" id="choice-unsp" value="unsp" type="radio">Unspecified
 	<br /><br />
 	between the age group of <br />
-	<input name="age-group" value="age18-25" type="radio" />18-25
-	<input name="age-group" value="age25-40" type="radio" />26-35
-	<input name="age-group" value="age36-45" type="radio" />36-45
-	<input name="age-group" value="age46-55" type="radio" />46-55
-	<input name="age-group" value="age56-65" type="radio" />56-65
-	<input name="age-group" value="age65u" type="radio" />65+
+	<input name="age" id="a18-25" value="18-25" type="radio">18-25
+	<input name="age" id="a26-35" value="26-35" type="radio">26-35
+	<input name="age" id="a36-45" value="36-45" type="radio">36-45
+	<input name="age" id="a46-55" value="46-55" type="radio">46-55
+	<input name="age" id="a56-65" value="56-65" type="radio">56-65
+	<input name="age" id="a65-up" value="65-up" type="radio">65+
 	<br /><br />
 	<i>Select your education / qualification</i><br />
-	<select name="edu-dropbox">
+	<select id="detail-dropbox">
+		<option value="NONE" selected>(Please Select)</option>
 		<option value="highschool">High School Diploma</option>
 		<option value="grad">Graduate</option>
 		<option value="pgrad">Post-graduate</option>
@@ -63,27 +66,23 @@
 	</select>
 	<br /><br />
 	<i>Please upload your resume here</i><br />
-	<input name="fupload" type="file" accept=""/>
+	<input id="detail-upload" type="file" accept=".pdf,.doc">
 	<br /><br />
 	<i>Recieve updates and newsletters regarding this?</i><br />
-	<input name="yes-update-news" type="checkbox" value="on" checked="checked"/>Yes, give me updates and newsletters<br />
-	<input name="yes-update" type="checkbox" value="on" />Give updates but no newsletters<br />
-	<input name="no-update-news" type="checkbox" value="on" />No, no updates and newsletters<br /><br />
+	<input name="news-update" id="update-news" value="upd-news" type="radio">Yes, give me updates and newsletters<br />
+	<input name="news-update" id="update-only" value="upd-only" type="radio">Give updates but no newsletters<br />
+	<input name="news-update" id="update-off" value="upd-off" type="radio">No, no updates and newsletters<br /><br />
 	<i>Give us your opinion : </i><br />
-	<textarea name="desc" rows="10" cols="50">
-	</textarea><br /><br />
-	<input name="submit" type="submit" value="Submit" />
-	<input name="reset" type="reset" value="Reset" />
+	<textarea name="text-desc" id="desc-text" rows="10" cols="50">
+	</textarea><br /><br /-->
+	<input name="submit" type="submit" value="Submit">
+	<input name="reset" type="reset" value="Reset">
 	</form>
 	</div>
-	<div id="side-section">
-	<h1>Links</h1>
-	</div>
-	<hr />
-	<div id=foot-link>
+	<div id="page-footer">
 	<h5>Website created by Mridul Nayar<br />
 	©Copyright 2018 by me. All rights <i>are</i> reserved.</h5>
-	<p><a href="#top" align="center">Back to top</a></p>
+	<p><a href="#top">Back to top</a></p>
 	</div>
 	</body>
 </html>

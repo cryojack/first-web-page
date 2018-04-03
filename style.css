@@ -1,62 +1,50 @@
 body{
-  background-color: wheat;
+  background-color: #FDEEF4;
 }
-#detail-header{
-  background-color: lightblue;
-  outline: solid;
+#page-heading{
   text-align: center;
-  word-spacing: 10px;
-  font-size: 30px;
-  width: 100%;
-  height: 18%;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: auto;
+  background-color: #E6A9EC;
+  font-size: 22px;
+  outline: solid black;
+  margin-top: 0;
+  margin-right: 100px;
+  margin-left: 100px;
 }
-#nav-bar-top{
-  background-color: yellow;
-  outline-style: solid;
+#page-heading:hover{
+  color: yellow;
+  background-color: #504A4B;
+}
+#page-navigation{
   text-align: center;
+  background-color: rgba(12,34,56,0.22);
+  font-size: 20px;
+}
+.navlink{
+  font-style: bold;
+  padding: 9px;
+}
+.navlink:visited{
+  color: yellow;
+}
+.navlink:hover{
+  color: yellow;
+  background-color: #504A4B;
+  border-style: solid;
+  padding: 1px;
+}
+#page-main{
   font-size: 25px;
-  width: 100%;
-  height: 15%;
-  top: 18%;
-  right: 0;
-  left: 0;
-  bottom: auto;
-}
-#form-details{
-  outline-color: magenta;
-  font-size: 22px;
-  width: 70%;
-  height: 60%;
-  top: 30%;
-  right: 70%;
-  left: 0;
-  bottom: auto;
-}
-#side-section{
-  font-size: 22px;
-  float: right;
-  width: 30%;
-  height: auto;
-  top: 0;
-  right: auto;
-  left: 0;
-  bottom: auto;
-}
-#foot-link{
-  text-align: center;
-  font-size: 18px;
-  width: 100%;
-  height: 13%;
   top: auto;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
-#top-link{
+#page-side{
+  font-size: 25px;
+  background-color: #4B0082;
+}
+#page-footer{
   text-align: center;
-  font-size: 18px;
+  font-size: 17px;
+  outline: solid wheat;
+  background-color: white;
+  margin-left: 350px;
+  margin-right: 350px;
 }
