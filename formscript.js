@@ -1,3 +1,3 @@
-function showDetails(){
-	alert("HELLO!");
+function showDetails(fname, lname){
+	alert('Hello ' + fname + ' ' + lname + '!');
 }

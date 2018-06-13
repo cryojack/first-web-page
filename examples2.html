@@ -2,44 +2,51 @@
 <html lang="en">
 	<head>
 	<link rel="icon" href="assets/images/webicon.png"/>
-	<link rel="stylesheet" type="text/css" href="style2.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="formscript2.js"></script>
 	<meta charset="utf-8">
-	<!--meta http-equiv="refresh" content="5; url=/home/cryojack/My Workspace/web design/examples.html"/-->
 	<title>Silly Examples 2| Mridul Nayar</title>
 	</head>
-	<!--div id="page-logo">
-	<img src="assets/images/webicon.png">
-	</div-->
 	<div id="page-heading">
 	<h1 id="top">Some Silly Examples (contd...)</h1>
 	</div>
 	<div id="page-navigation">
-	<a href = "home.html"> Home </a> | 
-	<a href = "aboutme.html"> About Me </a> | 
-	<a href = "index.html"> Index </a> | 
-	<a href = "examples.html"> Silly Examples</a> | 
-	<a href = "links.html"> Links </a> | 
-	<a href = "images.html"> My Images </a> | 
-	<a href = "videos.html"> My Videos </a> | 
-	<a href = "musings.html"> Musings! </a> | 
-	<a href = "diary.html"> Diary </a> | 
-	<a href = "blog.html"> Blog-uh-Sphere </a> | 
-	<a href = "forms.html"> Forms </a> | 
-	<a href = "mailto:mridul.nayar@gmail.com">Contact Me</a><br />
+	<a class="navexample2" href = "home.html"> Home </a>
+	<a class="navexample2" href = "aboutme.html"> About Me </a>
+	<a class="navexample2" href = "index.html"> Index </a>
+	<a class="navexample2" href = "examples.html"> Silly Examples</a>
+	<a class="navexample2" href = "links.html"> Links </a>
+	<a class="navexample2" href = "images.html"> My Images </a>
+	<a class="navexample2" href = "videos.html"> My Videos </a>
+	<a class="navexample2" href = "musings.html"> Musings! </a>
+	<a class="navexample2" href = "diary.html"> Diary </a>
+	<a class="navexample2" href = "blog.html"> Blog-uh-Sphere </a>
+	<a class="navexample2" href = "forms.html"> Forms </a>
+	<a class="navexample2" href = "mailto:mridul.nayar@gmail.com">Contact Me</a>
+	<br />
 	</div>
 	<body>
-	<div id="page-top-half">
-	<ol>
-		<li list-item="not too good">Orange</li>
-		<li list-item="just too good">Car</li>
-		<li list-item="not too good">Japan</li>
-		<li list-item="exactly too good">Friday</li>
-		<li list-item="just too good">Kit</li>
-		<li list-item="why too good">First</li>
-	</ol>
-	</div>
-	<div id="page-bottom-half">
-	</div>
+	<h3>Some examples of Javascript</h3>
+	<p id="para1">This paragraph's font size will be changed by clicking the button below!</p>
+	<input type="button" value="Click Me!" onclick="changePara()" />
+	<input type="button" value="Revert" onclick="revert()" />
+	<br />
+	<p id="para2">This paragraph can have the font size and style changed by pressing the buttons below</p>
+	<input type="button" value="Font Size 30px" onclick="changeFont30()" />
+	<input type="button" value="Font Size 40px" onclick="changeFont40()" />
+	<input type="button" value="Font Size 50px" onclick="changeFont50()" />
+	<br />
+	<br />
+	<form>
+	<label>Enter Something!</label>
+	<input type="text" id="myinput" />
+	<input type="button" id="showinput" value="Click me!" onclick="clickedBtn()" />
+	</form>
+	<p id="displayinput"></p>
+	<br />
+	<br />
+	<input type="button" id="incrementby1" value="Click here!" onclick="incrementBy1()">
+	<p id="showClicks"></p>
 	</body>
 	<div id="page-footer">
 	<h5 align="center">Website created by Mridul Nayar<br />
