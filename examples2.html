@@ -31,10 +31,9 @@
 	<input type="button" value="Click Me!" onclick="changePara()" />
 	<input type="button" value="Revert" onclick="revert()" />
 	<br />
-	<p id="para2">This paragraph can have the font size and style changed by pressing the buttons below</p>
-	<input type="button" value="Font Size 30px" onclick="changeFont30()" />
-	<input type="button" value="Font Size 40px" onclick="changeFont40()" />
-	<input type="button" value="Font Size 50px" onclick="changeFont50()" />
+	<p id="para2">This paragraph can have the font size and style changed by entering a value (upto 70) and clicking the button</p>
+	<input type="text" id="takefont" min="1" max="70">
+	<input type="button" value="Font Size 30px" onclick="changeFont(takefont.value)" />
 	<br />
 	<br />
 	<form>
@@ -45,8 +44,23 @@
 	<p id="displayinput"></p>
 	<br />
 	<br />
-	<input type="button" id="incrementby1" value="Click here!" onclick="incrementBy1()">
+	<input type="button" id="add1" value="Click here!" onclick="incrementBy1()">
 	<p id="showClicks"></p>
+	<br />
+	<br />
+	<p id="para3">This paragraph's font style will change based on clicking the buttons below</p>
+	<input type="button" value="Red" onclick="changeRed()" />
+	<input type="button" value="Blue" onclick="changeBlue()" />
+	<input type="button" value="Yellow" onclick="changeYellow()" />
+	<input type="button" value="Green" onclick="changeGreen()" />
+	<br />
+	<br />
+	<label>Enter 3 values for a color below in the range of 0 to 255.</label>
+	<input type="number" id="value_red" min="1" max="255" />
+	<input type="number" id="value_green" min="1" max="255" />
+	<input type="number" id="value_blue" min="1" max="255" />
+	<input type="button" value="Change" onclick="changeColor(value_red.value,value_green.value,value_blue.value)">
+	<p id="para4">This paragraph will change color using the values given above.</p>
 	</body>
 	<div id="page-footer">
 	<h5 align="center">Website created by Mridul Nayar<br />
