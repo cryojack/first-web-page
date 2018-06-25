@@ -12,8 +12,6 @@ function revert(){
 function changeFont(vf){
 	document.getElementById('para2').style.fontSize = vf+'px';
 }
-
-
 /******************/
 
 function clickedBtn(){
@@ -41,12 +39,21 @@ function changeBlue(){
 
 function changeYellow(){
 	document.getElementById('para3').style.color = 'yellow';
+<<<<<<< HEAD
 }
 
 function changeGreen(){
 	document.getElementById('para3').style.color = 'green';
 }
 
+=======
+}
+
+function changeGreen(){
+	document.getElementById('para3').style.color = 'green';
+}
+
+>>>>>>> 4edc3a6a60dcb48355ad1e9a8bad7e2e55775127
 /**************************/
 
 function changeColor(r,g,b){
