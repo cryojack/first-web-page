@@ -52,3 +52,24 @@ input{
   margin-left: 350px;
   margin-right: 350px;
 }
+
+#calc_main{
+  margin-left: 100px;
+}
+
+td{
+  /*outline: solid black 1px;*/
+  text-align: center;
+  padding: 5px;
+}
+
+#calcdisp{
+  width: 500px;
+  height: 50px;
+}
+
+.calcbtn{
+  margin: 5px;
+  width: 100px;
+  height: 40px;
+}

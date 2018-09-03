@@ -1,7 +1,9 @@
 body{
 	background-color: #FDEEF4;
 }
+
 /* This half of the styling is universal */
+
 #page-heading{
 	text-align: center;
 	background-color: #E6A9EC;
@@ -40,7 +42,9 @@ body{
 	margin-left: 350px;
 	margin-right: 350px;
 }
+
 /* CSS for forms.html */
+
 #page-form-details{
 	font-size: 18px;
 	text-align: left;
@@ -60,16 +64,49 @@ label{
 	text-align: right;
 }
 
-
 /* CSS for blog.html */
+
 #blog-body{
-	
+	font-size: 25px;
 }
-#blog-main{
+
+#blog-heading{
+	box-sizing: border-box;
+	text-align: center;
+	background-color: #808080;
+	color: red;
+}
+
+#blog-navigation{
+	box-sizing: border-box;
+	text-align: center;
 	float: left;
-	margin-bottom: 10px;
+	width: 15%;
 }
+
+#blog-navigation a{
+	width: 100%;
+	display: block;
+	outline: solid black 1px;
+	margin: 5px;
+}
+
+#blog-main{
+	box-sizing: border-box;
+	text-align: center;
+	outline: solid black 1px;
+	float: left;
+	width: 50%;
+	margin: 5px;
+}
+
 #blog-side{
+	box-sizing: border-box;
+	text-align: center;
 	float: right;
-	margin-bottom: 10px;
+}
+
+#blog-footer{
+	box-sizing: border-box;
+	text-align: center;
 }

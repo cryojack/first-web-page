@@ -1,79 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	<link rel="icon" href="assets/images/webicon.png"/>
-	<link rel="stylesheet" href="homestyle.css">
-	<meta charset="utf-8">
+		<link rel="icon" href="assets/images/webicon.png"/>
+		<link rel="stylesheet" href="style2.css">
+		<link rel="stylesheet" href="style3.css">
+		<meta charset="utf-8">
 		<title>My Diary | Mridul Nayar</title>
 	</head>
-	<body>
-	<header>
+	<div id="page-heading">
 	<h1 id="top">My Diary</h1>
-	<hr />
-	<nav>
-	<a href = "home.html"> Home </a> | 
-	<a href = "aboutme.html"> About Me </a> | 
-	<a href = "index.html"> Index </a> | 
-	<a href = "examples.html"> Silly Examples </a> | 
-	<a href = "examples2.html"> Silly Examples 2</a> | 
-	<a href = "links.html"> Links </a> | 
-	<a href = "images.html"> My Images </a> | 
-	<a href = "videos.html"> My Videos </a> | 
-	<a href = "musings.html"> Musings! </a> | 
-	<a href = "blog.html"> Blog-uh-Sphere </a> | 
-	<a href = "forms.html"> Forms </a> | 
-	<a href = "mailto:mridul.nayar@gmail.com">Contact Me</a>
-	</nav><hr />
-	</header>
-		<h3>This is my personal diary, read this for my daily activites.<br />The format for each entry is entry #, date(DD MM YYYY), time(12-hour format)</h3>
-		<p>
-		<u>Entry 1, 18-11-2017, 09:54AM</u><br />
-		Today I have added a few more things to the diary. And I will be adding more stuff to the Silly Examples page.<br />
-		<u>Entry 2, 18-11-2017, 11:09AM</u><br />
-		Added some more examples to the Silly Examples page.<br />
-		<u>Entry 3, 18-11-2017, 12:03PM</u><br />
-		Added the links below to all pages.<br />
-		<u>Entry 4, 19-11-2017, 10:41AM</u><br />
-		Added lists to this page.<br />
-		<u>Entry 5, 19-11-2017, 11:10AM</u><br />
-		Cleaned up the About Me page and added list examples.<br />
-		<u>Entry 6, 19-11-2017, 11:52AM</u><br />
-		Added a second Silly Examples page.<br />
-		<u>Entry 7, 20-11-2017, 12:51PM</u><br />
-		Not much, just added a few more lists.<br />
-		<u>Entry 8, 21-11-2017, 9:57AM</u><br />
-		Added irrelevant musing.<br />
-		<u>Entry 9, 22-11-2017, 10:34AM</u><br />
-		Added fonts to the examples. <br />
-		<u>Entry 10, 23-11-2017, 10:51AM</u><br />
-		Added a new page <q>Links</q> and cleaned up the rest.<br />
-		<u>Entry 11, 27-11-2017, 11:11AM</u><br />
-		Images page added and created assets folder<br />
-		<u>Entry 12, 30-11-2017, 10:47AM</u><br />
-		Cleaned up links.html and added new images<br />
-		<u>Entry 13, 04-12-2017, 10:42AM</u><br />
-		Colors added to Index and Musings<br />
-		<u>Entry 14, 11-12-2017, 12:01PM</u><br />
-		Added table examples<br />
-		<u>Entry 15, 17-12-2017, 12:59PM</u><br />
-		Added tab icons and a new table<br />
-		<u>Entry 16, 27-12-2017, 11:40AM</u><br />
-		Blog added with frames!!<br />
-		<u>Entry 17, 03-01-2018, 1:04PM</u><br />
-		Added a forms.html with examples<br />
-		<u>Entry 18, 05-01-2018, 1:02PM</u><br />
-		Added a CSS file for the home page.<br />
-		<u>Entry 19, 09-01-2018, 1:09PM</u><br />
-		Moved links to the top of the page<br />
-		<u>Entry 20, 17-01-2018, 12:51PM</u><br />
-		Added a videos page with a video, cleaned up all files
-		<u>Entry 21, 03-04-2018, 1:17PM</u><br />
-		CSS files and styles added to the exampls page
-	<hr />
-	<footer>
+	</div>
+	<div id="page-navigation">
+	<a class = "navlink" href = "home.html"> Home </a>
+	<a class = "navlink" href = "aboutme.html"> About Me </a>
+	<a class = "navlink" href = "index.html"> Index </a>
+	<a class = "navlink" href = "examples.html"> Silly Examples </a>
+	<a class = "navlink" href = "examples2.html"> Silly Examples 2</a>
+	<a class = "navlink" href = "links.html"> Links </a>
+	<a class = "navlink" href = "images.html"> My Images </a>
+	<a class = "navlink" href = "videos.html"> My Videos </a>
+	<a class = "navlink" href = "musings.html"> Musings! </a>
+	<a class = "navlink" href = "blog.html"> Blog-uh-Sphere </a>
+	<a class = "navlink" href = "forms.html"> Forms </a>
+	<a class = "navlink" href = "mailto:mridul.nayar@gmail.com">Contact Me</a>
+	</div>
+	<br />
+	<body>
+	<label for="diary-entry"> Diary Entry</label>
+	<textarea id="diary-entry" rows="3" cols="33" maxlength="1000" wrap="hard"></textarea>
+	<h3>This is my personal diary, read this for my daily activites.<br />The format for each entry is entry #, date(DD MM YYYY), time(12-hour format)</h3>
+	<p>
+	<u>Entry 1, 18-11-2017, 09:54AM</u><br />
+	Today I have added a few more things to the diary. And I will be adding more stuff to the Silly Examples page.<br />
+	<u>Entry 2, 18-11-2017, 11:09AM</u><br />
+	Added some more examples to the Silly Examples page.<br />
+	<u>Entry 3, 18-11-2017, 12:03PM</u><br />
+	Added the links below to all pages.<br />
+	<u>Entry 4, 19-11-2017, 10:41AM</u><br />
+	Added lists to this page.<br />
+	<u>Entry 5, 19-11-2017, 11:10AM</u><br />
+	Cleaned up the About Me page and added list examples.<br />
+	<u>Entry 6, 19-11-2017, 11:52AM</u><br />
+	Added a second Silly Examples page.<br />
+	<u>Entry 7, 20-11-2017, 12:51PM</u><br />
+	Not much, just added a few more lists.<br />
+	<u>Entry 8, 21-11-2017, 9:57AM</u><br />
+	Added irrelevant musing.<br />
+	<u>Entry 9, 22-11-2017, 10:34AM</u><br />
+	Added fonts to the examples. <br />
+	<u>Entry 10, 23-11-2017, 10:51AM</u><br />
+	Added a new page <q>Links</q> and cleaned up the rest.<br />
+	<u>Entry 11, 27-11-2017, 11:11AM</u><br />
+	Images page added and created assets folder<br />
+	<u>Entry 12, 30-11-2017, 10:47AM</u><br />
+	Cleaned up links.html and added new images<br />
+	<u>Entry 13, 04-12-2017, 10:42AM</u><br />
+	Colors added to Index and Musings<br />
+	<u>Entry 14, 11-12-2017, 12:01PM</u><br />
+	Added table examples<br />
+	<u>Entry 15, 17-12-2017, 12:59PM</u><br />
+	Added tab icons and a new table<br />
+	<u>Entry 16, 27-12-2017, 11:40AM</u><br />
+	Blog added with frames!!<br />
+	<u>Entry 17, 03-01-2018, 1:04PM</u><br />
+	Added a forms.html with examples<br />
+	<u>Entry 18, 05-01-2018, 1:02PM</u><br />
+	Added a CSS file for the home page.<br />
+	<u>Entry 19, 09-01-2018, 1:09PM</u><br />
+	Moved links to the top of the page<br />
+	<u>Entry 20, 17-01-2018, 12:51PM</u><br />
+	Added a videos page with a video, cleaned up all files<br />
+	<u>Entry 21, 03-04-2018, 1:17PM</u><br />
+	CSS files and styles added to the exampls page<br />
+	<div id="page-footer">
 	<h5>Website created by Mridul Nayar<br />
 	©Copyright 2018 by me. All rights <i>are</i> reserved.</h5>
 	<p align="center"><a href="#top">Back to top</a></p>
-	</footer>
+	</div>
 	</body>
 </html>

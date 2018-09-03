@@ -3,6 +3,8 @@
 	<head>
 	<link rel="icon" href="assets/images/webicon.png"/>
 	<link rel="stylesheet" type="text/css" href="style2.css">
+	<link rel="stylesheet" type="text/css" href="style3.css">
+	<script type="text/javascript" src="formscript2.js"></script>
 	<meta charset="utf-8">
 	<title>Silly ExamplesMridul Nayar</title>
 	</head>
@@ -25,9 +27,29 @@
 	</div>
 	<br />
 	<body>
-	<div id="page-main">
-	</div>
-	<div id="page-side">
+	<div id="main_table">
+	<h3>Conversion table!</h3>
+	<p>Convert <input type="text" class="converter" id="userVal" />
+		<select class="converter" id="val_init">
+		<option value="SELECT" selected>Select one</option>
+		<option value="bytes">Bytes</option>
+		<option value="kilobytes">Kilobytes</option>
+		<option value="megabytes">Megabytes</option>
+		<option value="gigabytes">Gigabytes</option>
+		</select>
+		to
+		<select class="converter" id="val_final">
+		<option value="SELECT" selected>Select one</option>
+		<option value="bytes">Bytes</option>
+		<option value="kilobytes">Kilobytes</option>
+		<option value="megabytes">Megabytes</option>
+		<option value="gigabytes">Gigabytes</option>
+		</select>
+		<br /><br />
+		<input type="button" class="converter" id="result_button" value="Convert" onclick="finalValue(userVal.value, val_init.value,val_final.value)" />
+		<input type="text" class="converter" id="result_final" disabled />
+		<br /><br />
+	</p>
 	</div>
 	</body>
 	<div id="page-footer">

@@ -3,6 +3,7 @@
 	<head>
 	<link rel="icon" href="assets/images/webicon.png"/>
 	<link rel="stylesheet" type="text/css" href="style2.css"/>
+	<link rel="stylesheet" type="text/css" href="style3.css"/>
 	<script type="text/javascript" src="formscript.js"></script>
 	<meta charset="utf-8">
 		<title>Details here! | Mridul Nayar</title>
@@ -37,48 +38,22 @@
 		<input type="text" id="lastname" name="user-name" size="30">
 	</div>
 	<div>
-		<input type="button" value="Send" onclick="showDetails(firstname.value,lastname.value)" />
+		<input type="button" value="Add to list" onclick="addDetails(firstname.value,lastname.value)" />
 	</div>
-	<!--br />
-	Date of Birth
-	<input id="detail-date" type="date">
-	<br /><br />
-	<i>Please check the appropriate options</i><br /><br />
-	I am a <br />
-	<input name="gender" id="choice-man" value="man" type="radio">Man
-	<input name="gender" id="choice-woman" value="woman" type="radio">Woman
-	<input name="gender" id="choice-unsp" value="unsp" type="radio">Unspecified
-	<br /><br />
-	between the age group of <br />
-	<input name="age" id="a18-25" value="18-25" type="radio">18-25
-	<input name="age" id="a26-35" value="26-35" type="radio">26-35
-	<input name="age" id="a36-45" value="36-45" type="radio">36-45
-	<input name="age" id="a46-55" value="46-55" type="radio">46-55
-	<input name="age" id="a56-65" value="56-65" type="radio">56-65
-	<input name="age" id="a65-up" value="65-up" type="radio">65+
-	<br /><br />
-	<i>Select your education / qualification</i><br />
-	<select id="detail-dropbox">
-		<option value="NONE" selected>(Please Select)</option>
-		<option value="highschool">High School Diploma</option>
-		<option value="grad">Graduate</option>
-		<option value="pgrad">Post-graduate</option>
-		<option value="doct">Doctorate</option>
-		<option value="noqual">No Qualification</option>
-		<option value="other">Other</option>
-	</select>
-	<br /><br />
-	<i>Please upload your resume here</i><br />
-	<input id="detail-upload" type="file" accept=".pdf,.doc">
-	<br /><br />
-	<i>Recieve updates and newsletters regarding this?</i><br />
-	<input name="news-update" id="update-news" value="upd-news" type="radio">Yes, give me updates and newsletters<br />
-	<input name="news-update" id="update-only" value="upd-only" type="radio">Give updates but no newsletters<br />
-	<input name="news-update" id="update-off" value="upd-off" type="radio">No, no updates and newsletters<br /><br />
-	<i>Give us your opinion : </i><br />
-	<textarea name="text-desc" id="desc-text" rows="10" cols="50">
-	</textarea><br /><br /-->
 	</form>
+	</div>
+	<br /><br />
+	<div>
+	<table id="userList">
+	<thead>
+	<tr>
+		<th scope="col">Sr. No.</th>
+		<th scope="col">First Name</th>
+		<th scope="col">Last Name</th>
+		<th scope="col">Date</th>
+	</tr>
+	</thead>
+	</table>
 	</div>
 	<div id="page-footer">
 	<h5>Website created by Mridul Nayar<br />

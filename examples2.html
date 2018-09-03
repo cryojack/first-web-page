@@ -61,6 +61,42 @@
 	<input type="number" id="value_blue" min="1" max="255" />
 	<input type="button" value="Change" onclick="changeColor(value_red.value,value_green.value,value_blue.value)">
 	<p id="para4">This paragraph will change color using the values given above.</p>
+	<br />
+	<h3>This is a calculator!</h3>
+	<div id="calc_main">
+	<table>
+	<tr>
+		<td colspan="4"><input type="text" id="calcdisp" disabled /></td>
+	</tr>
+	<tr>
+		<td><input type="button" class="calcbtn" id="calc7" value="7" onclick="showOutput(calc7.value)" /></td>
+		<td><input type="button" class="calcbtn" id="calc8" value="8" onclick="showOutput(calc8.value)" /></td>
+		<td><input type="button" class="calcbtn" id="calc9" value="9" onclick="showOutput(calc9.value)" /></td>
+		<td><input type="button" class="calcbtn" id="calcmin" value="-" onclick="showOutput(calcmin.value)" /></td>
+	</tr>
+	<tr>
+		<td><input type="button" class="calcbtn" id="calc4" value="4" onclick="showOutput(calc4.value)" /></td>
+		<td><input type="button" class="calcbtn" id="calc5" value="5" onclick="showOutput(calc5.value)" /></td>
+		<td><input type="button" class="calcbtn" id="calc6" value="6" onclick="showOutput(calc6.value)" /></td>
+		<td><input type="button" class="calcbtn" id="calcplus" value="+" onclick="showOutput(calcplus.value)" /></td>
+	</tr>
+	<tr>
+		<td><input type="button" class="calcbtn" id="calc1" value="1" onclick="showOutput(calc1.value)" /></td>
+		<td><input type="button" class="calcbtn" id="calc2" value="2" onclick="showOutput(calc2.value)" /></td>
+		<td><input type="button" class="calcbtn" id="calc3" value="3" onclick="showOutput(calc3.value)" /></td>
+		<td><input type="button" class="calcbtn" id="calcmult" value="*" onclick="showOutput(calcmult.value)" /></td>
+	</tr>
+	<tr>
+		<td><input type="button" class="calcbtn" id="calccls" value="C" onclick="showOutput(calccls.value)" /></td>
+		<td><input type="button" class="calcbtn" id="calc0" value="0" onclick="showOutput(calc0.value)" /></td>
+		<td><input type="button" class="calcbtn" id="calcdot" value="." onclick="showOutput(calcdot.value)" /></td>
+		<td><input type="button" class="calcbtn" id="calcdiv" value="/" onclick="showOutput(calcdiv.value)" /></td>
+	</tr>
+	<tr>
+		<td colspan="4"><input type="button" class="calcbtn" id="calcres" value="=" onclick="showOutput(calcres.value)"></td>
+	</tr>
+	</table>
+	</div>
 	</body>
 	<div id="page-footer">
 	<h5 align="center">Website created by Mridul Nayar<br />
