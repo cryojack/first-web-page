@@ -46,12 +46,30 @@ body{
 /* CSS for forms.html */
 
 #page-form-details{
-	font-size: 18px;
+	font-size: 22px;
 	text-align: left;
-	width: 400px;
+	width: 500px;
 	margin-top: 10px;
 	padding: 10px;
 	border: solid black 1px;
+}
+
+#detail-head{
+	text-align: center;
+	font-size: 30px;
+	font-style: bold;
+}
+
+.username{
+	height: 20px;
+	width: 300px;
+	font-size: 22px;
+}
+
+#comment{
+	height: 100px;
+	width: 300px;
+	font-size: 22px;
 }
 
 form div + div{
@@ -59,9 +77,11 @@ form div + div{
 }
 
 label{
-	width: 90px;
+	width: 100px;
 	display: inline-block;
-	text-align: right;
+	text-align: left;
+	font-style: bold;
+	margin-right: 5px;
 }
 
 /* CSS for blog.html */
@@ -109,4 +129,10 @@ label{
 #blog-footer{
 	box-sizing: border-box;
 	text-align: center;
+}
+
+/* CSS for diary.html */
+
+.diary{
+	font-size: 20px;
 }

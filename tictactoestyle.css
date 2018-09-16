@@ -1,0 +1,53 @@
+/* CSS for tictactoe.html */
+
+#page-heading{
+	box-sizing: border-box;
+	text-align: center;
+	background-color: #E6A9EC;
+	font-size: 50px;
+	font-style: bold;
+	outline: solid black;
+	margin-top: 10;
+	margin-right: 100px;
+	margin-left: 100px;
+}
+#page-heading:hover{
+	color: yellow;
+	background-color: #504A4B;
+}
+#page-navigation{
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	background-color: rgba(12,34,56,0.22);
+	font-size: 25px;
+	margin: 10px;
+	width: 20%;
+}
+.navlink{
+	display: block;
+	font-style: bold;
+	padding: 9px;
+	width: 100%;
+}
+.navlink:visited{
+	color: yellow;
+}
+.navlink:hover{
+	color: yellow;
+	background-color: #504A4B;
+	background-clip: content-box;
+}
+#page-body{
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 25px;
+}
+#page-footer{
+	text-align: center;
+	font-size: 19px;
+	outline: solid wheat;
+	background-color: white;
+	margin-left: 350px;
+	margin-right: 350px;
+}
