@@ -1,11 +1,11 @@
 
 var currentplayer = 'X';
-var cells = document.querySelectorAll('.gamebutton');
 
 function gamestart(){
-	for (var i = 0 ; i < cells.length ; i++)
+	var cells = document.querySelectorAll('.gamebutton');
+	for(var i = 0 ; i < cells.length ; i++)
 	{
-		console.log(cells[i].value);
+		cells[i].value = '';
 	}
 }
 
@@ -22,5 +22,10 @@ function addPiece(val){
 	if(val.value == ''){
 		val.value = currentplayer;
 	}
+	//checkWin();
 	switchPlayer(currentplayer);
+}
+
+function checkWin(){
+	
 }

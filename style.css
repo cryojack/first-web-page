@@ -73,3 +73,29 @@ td{
   width: 100px;
   height: 40px;
 }
+
+#para5{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-left: 400px;
+  width: 1000px;
+  height: 500px;
+  border: solid black 1px;
+}
+
+#randColor{
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+}
+
+/**************
+Styling for randomizer
+***************/
+
+#randomizer{
+  width: 500px;
+  height: 300px;
+  border: solid black 2px;  
+}

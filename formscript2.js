@@ -199,3 +199,23 @@ function gigabytes(userVal,val_final){
 		break;
 	}
 }
+/**************/
+
+function randomColor(){
+	var colorbox = document.getElementById('para5');
+	var r,g,b;
+	r = randNumber(0,256);
+	g = randNumber(0,256);
+	b = randNumber(0,256);
+	colorbox.style.backgroundColor = "rgb("+r+","+g+","+b+")";
+}
+
+function randNumber(min,max){
+	return Math.round(Math.random() * (max - min));
+}
+
+/****************/
+
+document.getElementById('randomizer').addEventListener("click",randomNum());
+function randomNum(){
+}
