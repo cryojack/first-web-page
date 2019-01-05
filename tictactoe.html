@@ -40,10 +40,23 @@
 		<td><input type="button" id = "8" class="gamebutton"  onclick="addPiece(this)"/></td>
 		</tr>
 		<tr>
-		<td colspan="3"><input type="button" id="resetgame" value="Start" onclick="gamestart()"/></td>
+		<td colspan="3"><input type="button" id="resetgame" value="Reset Game" onclick="gamestart()"/></td>
+		</tr>
+		<tr>
+		<td colspan="3"><input type="button" id="resetscore" value="Reset Score" onclick="resetScore()"/></td>
+		</tr>
+		<tr>
+		<td><label for="scoreX">X Score</label></td>
+		<td><label for="scoreO">O Score</label></td>
+		</tr>
+		<tr>
+		<td><input type="textarea" class="scorebox" id="scoreX" value="0" /></td>
+		<td><input type="textarea" class="scorebox" id="scoreO" value="0" /></td>
 		</tr>
 	</table>
+	</div>
+	</div>
 	<div id="page-footer">
-		This is the footer
+		Created by Mridul Nayar!
 	</div>
 	</html>

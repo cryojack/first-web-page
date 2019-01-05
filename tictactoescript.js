@@ -13,6 +13,8 @@ var winconditions = [
 
 var board = [];
 var places = 9;
+var scoreX = 0;
+var scoreO = 0;
 
 
 function gamestart(){
@@ -22,6 +24,13 @@ function gamestart(){
 	{
 		cells[i].value = '';
 	}
+}
+
+function resetScore(){
+	scoreX = 0;
+	scoreO = 0;
+	document.getElementById('scoreX').value = 0;
+	document.getElementById('scoreO').value = 0;
 }
 
 function putValues(){
@@ -67,6 +76,14 @@ function checkWin(board,player){
 			}
 			if(sum == 3){
 				alert("Player " + player + " has won!!");
+				if(player == 'X'){
+					scoreX++;
+					document.getElementById('scoreX').value = scoreX;
+				}
+				else if(player == 'O'){
+					scoreO++;
+					document.getElementById('scoreO').value = scoreO;
+				}
 				gamestart();
 			}
 		}

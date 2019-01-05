@@ -61,7 +61,7 @@
 /* Game Code */
 
 #tictactoe-game{
-	margin-left: 100px;
+	margin-left: 300px;
 	font-weight: bold;
 	font-size: 25px;	
 }
@@ -73,8 +73,15 @@
 	font-size: 30px;
 }
 
-#resetgame{
+.scorebox{
 	height: 100px;
-	width: 310px;
+	width: 100px;
+	font-size: 30px;
+	text-align: center; 	
+}
+
+#resetgame,#resetscore{
+	height: 100px;
+	width: 315px;
 	font-size: 30px;
 }
